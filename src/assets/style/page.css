@@ -1,0 +1,167 @@
+:root {
+    --blue: #002b7a;
+    --lightblue: #e6f0ff;
+    --pink: #ffe6f0;
+    --gray: #cccccc;
+  }
+  
+  .product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  .men-section {
+    background: linear-gradient(to bottom, #D6E6FF 75%, #ffffff 25%);
+  }
+  
+  .women-section {
+    background: linear-gradient(to bottom, #FDE2FF 75%, #ffffff 25%);
+  }
+  
+  .unavailable-section {
+    background: linear-gradient(to bottom, #DCDCDC 75%, #ffffff 25%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .unavailable-wrapper {
+    position: relative;
+    width: 200%;
+    max-width: 500px;
+    margin: 5 auto;
+  }
+  
+  .unavailable-image {
+    width: 105%;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .overlay-content h2 {
+    margin-bottom: 12px;
+    font-size: 20px;
+  }
+  
+  .next-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .next-button:hover {
+    background-color: #0056b3;
+  }  
+  
+  .unavailable-text {
+    font-size: 18px;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #333;
+  }  
+  
+  .product-card {
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .product-image {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  .product-details {
+    max-width: 800px;
+  }
+  
+  .category {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .rating {
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .description {
+    margin: 1rem 0;
+  }
+  
+  .price {
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .actions {
+    margin-top: 1rem;
+  }
+  
+  .buy-button,
+  .next-button {
+    padding: 0.5rem 1.2rem;
+    font-weight: bold;
+    border: 2px solid var(--blue);
+    margin-right: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .buy-button {
+    background-color: var(--blue);
+    color: white;
+  }
+  
+  .next-button {
+    background-color: white;
+    color: var(--blue);
+  }
+  
+  .loader {
+    border: 6px solid var(--gray);
+    border-top: 6px solid var(--blue);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .unavailable-message {
+    text-align: center;
+  }
+  
