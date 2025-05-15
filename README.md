@@ -39,6 +39,26 @@ Each category section has different styles including layout colors, button theme
 git clone https://github.com/salsabilatts/task5.git
 cd task5
 
+## 🚀 Deployment with Docker & CI/CD
+
+This project uses Docker to containerize the Vue.js app.
+
+**Build the Docker image:**
+
+```bash
+docker build -t vue-product-app .
+
+Run the container:
+docker run -d -p 8080:80 --name vue-product-container vue-product-app
+
+The app will be available at http://localhost:8080.
+
+⚙️ CI/CD with GitHub Actions
+This project includes a GitHub Actions workflow for CI/CD that:
+
+Builds the Docker image.
+Pushes it to Docker Hub.
+Every push to the main branch will trigger the build and deployment to Docker Hub.
 
 ## Project setup
 ```
